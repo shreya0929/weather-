@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Weather App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+</head>
+<body>
+ 
+  <div class="boddy">
+    <span class="logo">
+      <img src="770b805d5c99c7931366c2e84e88f251.png" alt="logo" height="2%" width="5%">
+      <div class="weather"><h2>Weather Report</h2></div>
+    </span>
+    <div class="container">
+        <label for="locationInput">Enter Location</label>
+        <input type="text" id="locationInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherInfo"></div>
+    </div>
+    <script src="script2.js"></script>
+  </div>
+</body>
+<script>
+    VANTA.CLOUDS({
+      el: ".boddy",
+      mouseControls: true,
+      
+    });
+  </script>
+</html>
